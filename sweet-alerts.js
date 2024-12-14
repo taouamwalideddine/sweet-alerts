@@ -16,7 +16,7 @@ class SweetAlert {
   
     showAlert(type, message) {
       const alert = document.createElement('div');
-      alert.className = `px-4 py-3 rounded shadow-lg text-white font-medium transition-opacity duration-500 ${this.getTypeClass(type)}`;
+      alert.className = `px-4 py-3 rounded shadow-lg text-white font-medium rounded-xl transition-opacity duration-500 ${this.getTypeClass(type)}`;
       alert.innerText = message;
   
       this.container.appendChild(alert);
@@ -29,10 +29,10 @@ class SweetAlert {
   
     getTypeClass(type) {
       switch (type) {
-        case 'success': return 'bg-green-500';
-        case 'info': return 'bg-blue-500';
-        case 'warning': return 'bg-yellow-500 text-black';
-        case 'danger': return 'bg-red-500';
+        case 'success': return 'bg-black border-l-green-500 border-l-8';
+        case 'info': return 'border-l-blue-500 border-l-8 bg-black';
+        case 'warning': return 'bg-black border-l-yellow-500 border-l-8';
+        case 'danger': return 'bg-black border-l-red-500 border-l-8';
         default: return 'bg-gray-500';
       }
     }
