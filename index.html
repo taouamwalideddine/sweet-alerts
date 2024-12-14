@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Alerts</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+  <div class="space-x-4">
+    <button id="info-btn" class="px-4 py-2 bg-blue-500 text-white rounded">Show Info</button>
+    <button id="success-btn" class="px-4 py-2 bg-green-500 text-white rounded">Show Success</button>
+    <button id="warning-btn" class="px-4 py-2 bg-yellow-500 text-black rounded">Show Warning</button>
+    <button id="danger-btn" class="px-4 py-2 bg-red-500 text-white rounded">Show Danger</button>
+  </div>
+
+  <script src="./sweet-alerts.js"></script>
 </body>
 </html>
