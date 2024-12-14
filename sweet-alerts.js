@@ -43,3 +43,4 @@ class SweetAlert {
   document.getElementById('info-btn').onclick = () => alert.showAlert('info', 'This is an info alert!');
   document.getElementById('success-btn').onclick = () => alert.showAlert('success','this is success alert'); 
   document.getElementById('warning-btn').onclick = () => alert.showAlert('warning', 'This is a warning alert!');
+  document.getElementById('danger-btn').onclick = () => alert.showAlert('danger', 'This is a danger alert!');
